@@ -8,12 +8,6 @@ const Sidebar = ({ onShowCompleted, onShowAllTasks, totalTasks, completedTasks, 
   return (
     <div>
       {/* Sidebar Button for Mobile */}
-      <button 
-        onClick={toggleSidebar} 
-        className="lg:hidden fixed top-4 left-4 bg-blue-600 text-white p-2 rounded-full z-20"
-      >
-        ☰
-      </button>
       
       {/* Sidebar Container */}
       <div className={`bg-light z-50 h-[95vh] fixed lg:relative w-56 lg:w-72 p-4 m-2 rounded-md transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
