@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { auth, db } from '../firebase';
 import { onAuthStateChanged } from "../firebase";
-import { collection, onSnapshot, query, where } from "firebase/firestore";
+import { collection, onSnapshot, query, where } from "../firebase";
 import Sidebar from '../components/Sidebar';
 import List from '../components/List';
 import logo from '../assets/logo.svg';
