@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { auth, db } from '../firebase';
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged } from "../firebase";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
 import Sidebar from '../components/Sidebar';
 import List from '../components/List';
@@ -69,7 +69,7 @@ const Main = () => {
         </div>
 
         {/* Greeting & Profile */}
-        <div className="flex items-center bg-light/75 w-60 lg:w-40 p-2 h-14 rounded-md mb-4 mt-16 lg:mt-0">
+        <div className="flex items-center bg-light/75 w-60   lg:w-40 p-2 h-14 rounded-md mb-4 mt-16 lg:mt-0">
           <img src={user?.photoURL} className="w-9 h-9 rounded-md object-cover" alt="User Profile" />
           <div className="justify-center items-center px-1">
             <p className="text-gray text-sm">{greeting},</p>
