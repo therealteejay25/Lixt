@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import plusIcon from '../assets/Feather/plus-circle.svg';
 import { db, auth } from '../firebase';
-import { collection, addDoc, doc, updateDoc, deleteDoc } from "firebase/firestore";
+import { collection, addDoc, doc, updateDoc, deleteDoc } from "../firebase";
 import Listitem from './Listitem';
 import Additemmodal from './Additemmodal';
 
