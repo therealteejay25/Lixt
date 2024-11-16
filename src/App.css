@@ -29,6 +29,6 @@
 .home{
   background: url(./assets/freepik__upload__289.jpeg);
   background-position: center;
-  background-size: contain;
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }

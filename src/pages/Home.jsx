@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div className='home h-screen bg-gray-100'>
-      <div className="bg-grey/30 h-screen flex flex-col justify-center items-center">
+      <div className="bg-gray/5 h-screen flex flex-col justify-center items-center">
         <div className='flex p-4'>
           <img src={logo} className='h-7' alt="Lixt Logo" />
           <h1 className='text-dark text-2xl px-1 font-bold'>Lixt</h1>
