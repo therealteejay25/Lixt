@@ -1,10 +1,10 @@
 @font-face {
   font-family: Gabarito;
-  src: url(./assets/Gabarito-VariableFont_wght.ttf);
+  src: url(./assets/Nunito-VariableFont_wght.ttf);
 }
 
 *{
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gabarito", sans-serif;
 }
 .scrollbar-custom::-webkit-scrollbar {
   width: 10px;

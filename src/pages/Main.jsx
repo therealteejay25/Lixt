@@ -58,12 +58,12 @@ const Main = () => {
       {/* Main Content */}
       <div className="relative flex flex-col w-full lg:pl-64 px-4 lg:px-16 py-4">
         {/* Logo and Sidebar Toggle */}
-        <div className="flex items-center justify-between lg:hidden fixed top-0 left-0 w-full p-4 bg-white shadow-md z-10">
+        <div className="flex items-center justify-between lg:hidden fixed top-0 left-0 w-full p-4 bg-white shadow z-10">
           <div className="flex items-center space-x-2">
             <img src={logo} className="h-6" alt="Logo" />
-            <h1 className="text-dark text-xl font-bold">Lixt</h1>
+            <h1 className="text-dark text-xl py-[2px] font-bold">Lixt</h1>
           </div>
-          <button onClick={toggleSidebar} className="text-dark focus:outline-none">
+          <button onClick={toggleSidebar} className="text-dark focus:outline-none px-5">
             <span className="material-icons"><img src={menuIcon} alt="" /></span>
           </button>
         </div>
