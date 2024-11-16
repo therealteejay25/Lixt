@@ -51,7 +51,7 @@ const List = ({ tasks, showCompleted }) => {
       {/* "Create New Task" Button */}
       <button 
         onClick={() => setIsModalVisible(true)} 
-        className="mt-6 w-full lg:w-64 mx-auto py-2 px-8 flex items-center justify-center bg-dark text-white rounded-full"
+        className="mt-6 w-full lg:w-64 mx-auto py-2 px-5 flex items-center justify-center bg-dark text-white rounded-full"
       >
         <img src={plusIcon} className="h-5 mr-2" alt="Add Task" />
         <p className="text-light">Create new task</p>
