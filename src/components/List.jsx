@@ -34,7 +34,7 @@ const List = ({ tasks, showCompleted }) => {
   const filteredTasks = showCompleted ? tasks.filter(task => task.completed) : tasks;
 
   return (
-    <div className="px-10 lg:p-5 overflow-y-auto h-full max-h-screen scrollbar-custom">
+    <div className="px-20 lg:p-5 overflow-y-auto h-full max-h-screen scrollbar-custom">
       {/* Task List Container */}
       <div className="flex flex-col items-center space-y-4 px-20 lg:mx-auto lg:max-w-3xl">
         {filteredTasks.map(task => (

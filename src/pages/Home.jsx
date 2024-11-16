@@ -34,7 +34,7 @@ const Home = () => {
         </div>
         <div className='text-center py-20 px-4 max-w-sm mx-auto'>
           <h2 className='text-dark text-3xl md:text-4xl font-semibold'>
-            Think, Plan, and Track <br /> <span className='text-grey'>all in one place.</span>
+            Think, Plan, and Track <br /> <span className='text-gray'>all in one place.</span>
           </h2>
           <p className='text-sm md:text-base py-3 text-dark'>
             Efficiently manage your tasks and boost productivity.
