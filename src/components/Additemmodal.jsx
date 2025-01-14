@@ -15,7 +15,8 @@ const Additemmodal = ({ isVisible, onClose, onSaveTask }) => {
   };
 
   return (
-    <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center ${isVisible ? 'block' : 'hidden'}`}>
+    <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 bg-black/50 flex h-screen w-screen items-center justify-center ${isVisible ? 'block' : 'hidden'}`}>
+      <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 flex lg:pl-72 items-center justify-center ${isVisible ? 'block' : 'hidden'}`}>
       <div className="bg-white w-[90%] max-w-lg mx-auto p-6 rounded-lg shadow-lg">
         <div className='flex justify-between items-center'>
           <h3 className="text-lg font-semibold my-4">Add a New Task</h3>
@@ -27,8 +28,8 @@ const Additemmodal = ({ isVisible, onClose, onSaveTask }) => {
           type="text"
           value={taskTitle}
           onChange={(e) => setTaskTitle(e.target.value)}
-          placeholder="Task title"
-          className="w-full border border-gray-300 p-2 px-4 rounded-full mb-4 outline-none"
+          placeholder="Task Name..."
+          className="w-full border border-gray-300 p-2 px-4 rounded-md mb-4 outline-none"
         />
         <div className="flex justify-end">
           <button
@@ -40,6 +41,7 @@ const Additemmodal = ({ isVisible, onClose, onSaveTask }) => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

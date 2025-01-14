@@ -34,7 +34,7 @@ const List = ({ tasks, showCompleted }) => {
   const filteredTasks = showCompleted ? tasks.filter(task => task.completed) : tasks;
 
   return (
-    <div className="px-20  py-16 lg:p-5 overflow-y-auto h-full max-h-screen scrollbar-custom">
+    <div className="px-20  py-16 lg:p-5 h-full min-h-screen">
       {/* Task List Container */}
       <div className="flex flex-col items-center space-y-4 px-20 lg:mx-auto lg:max-w-3xl">
         {filteredTasks.map(task => (
@@ -51,7 +51,7 @@ const List = ({ tasks, showCompleted }) => {
       {/* "Create New Task" Button */}
       <button 
         onClick={() => setIsModalVisible(true)} 
-        className="mt-6 w-full lg:w-64 mx-auto py-2 px-2 flex items-center justify-center bg-dark text-white rounded-full"
+        className="mt-6 w-96 lg:w-64 mx-auto py-3 fixed lg:top-[40rem] top-[50rem] left-4 lg:left-[50rem] shadow-2xl px-2 flex items-center justify-center bg-dark text-white rounded-full"
       >
         <img src={plusIcon} className="h-5 mr-2" alt="Add Task" />
         <p className="text-light">Create new task</p>

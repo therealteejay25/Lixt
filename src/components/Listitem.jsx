@@ -16,7 +16,7 @@ const Listitem = ({ task, onComplete, onDelete, onEdit }) => {
   };
 
   return (
-    <div className="flex justify-between bg-light hover:scale-105 transition shadow my-2 mx-5 w-72 rounded p-[6px] px-3">
+    <div className="flex justify-between bg-light transition shadow my-2 mx-5 w-72 lg:w-[40rem] rounded p-3 px-3">
       <div className="flex items-center">
         <input
           type="checkbox"

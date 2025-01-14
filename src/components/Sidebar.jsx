@@ -10,14 +10,14 @@ const Sidebar = ({ onShowCompleted, onShowAllTasks, totalTasks, completedTasks, 
       {/* Sidebar Button for Mobile */}
       
       {/* Sidebar Container */}
-      <div className={`bg-light z-50 md:h-[95vh] h-screen fixed lg:relative w-64 lg:w-72 p-4 lg:m-2 rounded-md transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
+      <div className={`bg-light z-50 h-screen fixed w-64 lg:w-72 p-4 transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
         <div className='flex p-4'>
           <img src={logo} className='h-7' alt="Lixt Logo" />
           <h1 className='text-dark text-2xl px-1 font-bold'>Lixt</h1>
         </div>
         <div>
           <button 
-            className='flex justify-between hover:bg-grey focus:bg-grey transition py-[6px] px-4 rounded-md m-2'
+            className='flex justify-between focus:bg-grey transition py-[6px] rounded-md m-2'
             onClick={() => { onShowAllTasks(); closeSidebar(); }}
           >
             <div className='flex'>
@@ -29,7 +29,7 @@ const Sidebar = ({ onShowCompleted, onShowAllTasks, totalTasks, completedTasks, 
           
           <button 
             onClick={() => { onShowCompleted(true); closeSidebar(); }} 
-            className='flex justify-between hover:bg-grey focus:bg-grey transition py-[6px] px-4 rounded-md m-2'
+            className='flex justify-between focus:bg-grey transition py-[6px] rounded-md m-2'
           >
             <div className='flex'>
               <img src={checkIcon} className='w-10 py-2 pr-[5px] h-10' alt="Completed" />
