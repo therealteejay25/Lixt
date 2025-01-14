@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 const Sidebar = ({ onShowCompleted, onShowAllTasks, totalTasks, completedTasks, isOpen, toggleSidebar, closeSidebar }) => {
   return (
     <div>
-      {/* Sidebar Button for Mobile */}
-      
       {/* Sidebar Container */}
       <div className={`bg-light z-50 h-screen fixed w-64 lg:w-72 p-4 transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
         <div className='flex p-4'>

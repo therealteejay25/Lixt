@@ -56,7 +56,7 @@ const Main = () => {
       />
 
       {/* Main Content */}
-      <div className="relative flex flex-col w-full lg:pl-96 px-4 lg:px-16 py-4">
+      <div className="relative scrollbar-custom flex flex-col w-full lg:pl-96 px-4 lg:px-16 py-4">
         {/* Logo and Sidebar Toggle */}
         <div className="flex items-center justify-between lg:hidden fixed top-0 left-0 w-full p-4 bg-white shadow z-10">
           <div className="flex items-center space-x-2">

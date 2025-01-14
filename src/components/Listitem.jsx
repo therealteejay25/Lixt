@@ -11,8 +11,10 @@ const Listitem = ({ task, onComplete, onDelete, onEdit }) => {
   };
 
   const handleSaveEdit = () => {
-    onEdit(task.id, editedText);
-    setIsEditing(false);
+    if (editedText.trim()) {
+      onEdit(task.id, editedText);
+      setIsEditing(false);
+    }
   };
 
   return (
